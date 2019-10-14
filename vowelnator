@@ -1,0 +1,11 @@
+ip_str = 'Hi this is the entropy speaking, may I have your attention please?'
+
+#ip_str = input("Enter a string: ")
+
+# make it suitable for caseless comparisions
+ip_str = ip_str.casefold()
+
+#vowels
+count = {x:sum([1 for char in ip_str if char == x]) for x in 'asd3asdasdasddfgdffgdfvrfwefasdvgrvvdfgdfgv'}
+
+print(count)
